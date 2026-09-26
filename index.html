@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -11,456 +10,328 @@
 
 <body>
 
-    <header id="header">
+<main class="content">
 
-        <div class="header-content">
+    <h1>Гиперссылки</h1>
 
-            <!-- Логотип -->
-            <div class="logo">
-                <a href="index.html">
-                    <img src="doroga_razmetka_dal_167834_2560x1600.jpg"
-                         width="60"
-                         height="60"
-                         alt="Логотип">
+    <section id="links">
+
+        <ul>
+
+            <li>
+                <a href="http://kubsu.ru">
+                    Главная страница kubsu.ru
                 </a>
-            </div>
+            </li>
 
-            <!-- Название сайта -->
-            <div class="site-name">
-                <h1>Мой сайт</h1>
-            </div>
+            <li>
+                <a href="https://kubsu.ru">
+                    Главная страница kubsu.ru HTTPS
+                </a>
+            </li>
 
-            <!-- Меню -->
-            <nav id="menu">
-                <a href="#links">Ссылка меню 1</a>
-                <a href="#table">Ссылка 2</a>
-                <a href="#form">Ссылка 3</a>
-            </nav>
+            <li>
+                <a href="https://kubsu.ru">
+                    Изображение-ссылка на kubsu.ru
+                </a>
+            </li>
 
-        </div>
+            <li>
+                <a href="/about">
+                    Сокращённая ссылка на внутреннюю страницу
+                </a>
+            </li>
 
-    </header>
+            <li>
+                <a href="/">
+                    Сокращённая ссылка на главную страницу
+                </a>
+            </li>
 
+            <li>
+                <a href="#form">
+                    Перейти к форме
+                </a>
+            </li>
 
-    <main class="content">
+            <li>
+                <a href="https://kubsu.ru/?a=1&b=2&c=3">
+                    URL с тремя параметрами
+                </a>
+            </li>
 
-        <h1>Гиперссылки</h1>
+            <li>
+                <a href="https://kubsu.ru/?id=123">
+                    URL с параметром id
+                </a>
+            </li>
 
-        <section id="links">
+            <li>
+                <a href="page.html">
+                    Страница в текущем каталоге
+                </a>
+            </li>
 
-            <ul>
+            <li>
+                <a href="about/page.html">
+                    Страница в каталоге about
+                </a>
+            </li>
 
-                <li>
-                    <a href="http://kubsu.ru">
-                        Главная страница kubsu.ru
-                    </a>
-                </li>
+            <li>
+                <a href="../page.html">
+                    Страница на уровень выше
+                </a>
+            </li>
 
-                <li>
+            <li>
+                <a href="../../page.html">
+                    Страница на два уровня выше
+                </a>
+            </li>
+
+            <li>
+                <p>
+                    Это обычный текст с
                     <a href="https://kubsu.ru">
-                        Главная страница kubsu.ru HTTPS
+                        контекстной ссылкой
                     </a>
-                </li>
+                    внутри него.
+                </p>
+            </li>
 
-                <li>
-                    <a href="https://kubsu.ru">
-                        <img src="doroga_razmetka_dal_167834_2560x1600.jpg"
-                             width="100"
-                             alt="КубГУ">
-                    </a>
-                </li>
+            <li>
+                <a href="https://ru.wikipedia.org/wiki/HTML#История">
+                    Фрагмент страницы стороннего сайта
+                </a>
+            </li>
 
-                <li>
-                    <a href="/about">
-                        Сокращённая ссылка на внутреннюю страницу
-                    </a>
-                </li>
+            <li>
+                <a href="">
+                    Ссылка с пустым href
+                </a>
+            </li>
 
-                <li>
-                    <a href="/">
-                        Сокращённая ссылка на главную страницу
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#form">
-                        Перейти к форме
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://kubsu.ru/?a=1&b=2&c=3">
-                        URL с тремя параметрами
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://kubsu.ru/?id=123">
-                        URL с параметром id
-                    </a>
-                </li>
-
-                <li>
-                    <a href="page.html">
-                        Страница в текущем каталоге
-                    </a>
-                </li>
-
-                <li>
-                    <a href="about/page.html">
-                        Страница в каталоге about
-                    </a>
-                </li>
-
-                <li>
-                    <a href="../page.html">
-                        Страница на уровень выше
-                    </a>
-                </li>
-
-                <li>
-                    <a href="../../page.html">
-                        Страница на два уровня выше
-                    </a>
-                </li>
-
-                <li>
-                    <p>
-                        Это обычный текст с
-                        <a href="https://kubsu.ru">
-                            контекстной ссылкой
-                        </a>
-                        внутри него.
-                    </p>
-                </li>
-
-                <li>
-                    <a href="https://ru.wikipedia.org/wiki/HTML#История">
-                        Фрагмент страницы стороннего сайта
-                    </a>
-                </li>
-
-                <li>
-
-                    <img src="doroga_razmetka_dal_167834_2560x1600.jpg"
-                         width="300"
-                         height="150"
-                         usemap="#map"
-                         alt="Картинка">
-
-                    <map name="map">
-
-                        <area shape="rect"
-                              coords="0,0,150,150"
-                              href="https://kubsu.ru">
-
-                        <area shape="circle"
-                              coords="225,75,50"
-                              href="https://google.com">
-
-                    </map>
-
-                </li>
-
-                <li>
-                    <a href="">
-                        Ссылка с пустым href
-                    </a>
-                </li>
-
-                <li>
-                    <a>
-                        Ссылка без href
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://kubsu.ru"
-                       rel="nofollow">
-                        Ссылка с nofollow
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://kubsu.ru"
-                       rel="noindex">
-                        Ссылка с noindex
-                    </a>
-                </li>
-
-            </ul>
-
-        </section>
-
-
-        <h2>Нумерованный список ссылок</h2>
-
-        <ol>
+            <li>
+                <a>
+                    Ссылка без href
+                </a>
+            </li>
 
             <li>
                 <a href="https://kubsu.ru"
-                   title="Официальный сайт КубГУ">
-                    КубГУ
+                   rel="nofollow">
+                    Ссылка с nofollow
                 </a>
             </li>
 
             <li>
-                <a href="https://google.com"
-                   title="Поисковая система Google">
-                    Google
+                <a href="https://kubsu.ru"
+                   rel="noindex">
+                    Ссылка с noindex
                 </a>
             </li>
 
-            <li>
-                <a href="https://yandex.ru"
-                   title="Поисковая система Яндекс">
-                    Яндекс
-                </a>
-            </li>
-
-        </ol>
-
-
-        <!-- ТАБЛИЦА -->
-
-        <h2 id="table">Таблица</h2>
+        </ul>
 
-        <table>
+    </section>
 
-            <thead>
-                <tr>
-                    <th>№</th>
-                    <th>Имя</th>
-                    <th>Фамилия</th>
-                    <th>Группа</th>
-                    <th>Оценка</th>
-                </tr>
-            </thead>
-
-            <tbody>
-
-                <tr>
-                    <td>1</td>
-                    <td>Иван</td>
-                    <td>Иванов</td>
-                    <td rowspan="2">ИН11</td>
-                    <td>5</td>
-                </tr>
-
-                <tr>
-                    <td>2</td>
-                    <td>Пётр</td>
-                    <td>Петров</td>
-                    <td>4</td>
-                </tr>
-
-                <tr>
-                    <td>3</td>
-                    <td>Анна</td>
-                    <td>Сидорова</td>
-                    <td>ИИ11</td>
-                    <td>5</td>
-                </tr>
-
-                <tr>
-                    <td>4</td>
-                    <td>Мария</td>
-                    <td>Смирнова</td>
-                    <td>ФИ11</td>
-                    <td>4</td>
-                </tr>
-
-                <tr>
-                    <td>5</td>
-                    <td>Алексей</td>
-                    <td>Кузнецов</td>
-                    <td rowspan="2">ПИ11</td>
-                    <td>3</td>
-                </tr>
-
-                <tr>
-                    <td>6</td>
-                    <td>Дмитрий</td>
-                    <td>Волков</td>
-                    <td>5</td>
-                </tr>
-
-                <tr>
-                    <td colspan="4">Средняя оценка</td>
-                    <td>4.3</td>
-                </tr>
-
-            </tbody>
-
-        </table>
-
-
-        <!-- FTP -->
-
-        <h2>FTP</h2>
-
-        <a href="ftp://user:password@example.com/file.txt">
-            Ссылка на FTP
-        </a>
-
-
-        <!-- ФОРМА -->
-
-        <h2 id="form">Форма</h2>
-
-        <form action="/" method="POST">
-
-            <!-- ФИО -->
-            <label>
-                ФИО:<br>
-
-                <input name="fio"
-                       type="text"
-                       pattern="[А-Яа-яЁёA-Za-z\s]+"
-                       title="Введите только буквы и пробелы"
-                       required>
-            </label>
-
-            <br><br>
-
-
-            <!-- ТЕЛЕФОН -->
-            <label>
-                Телефон:<br>
-
-                <input name="phone"
-                       type="tel"
-                       pattern="[0-9]{11}"
-                       minlength="11"
-                       maxlength="11"
-                       inputmode="numeric"
-                       title="Введите номер телефона из 11 цифр"
-                       required>
-            </label>
-    
-            <br><br>
 
-            <!-- EMAIL -->
-            <label>
-                E-mail:<br>
+    <h2>Нумерованный список ссылок</h2>
 
-                <input name="email"
-                       type="email"
-                       placeholder="Введите вашу почту"
-                       required>
-            </label>
-            <br><br>
+    <ol>
 
-            <!-- ДАТА РОЖДЕНИЯ -->
-            <label>
-                Дата рождения:<br>
+        <li>
+            <a href="https://kubsu.ru"
+               title="Официальный сайт КубГУ">
+                КубГУ
+            </a>
+        </li>
 
-                <input name="birthdate"
-                       type="date"
-                       min="1900-01-01"
-                       max="2026-09-25"
-                       required>
-            </label>
+        <li>
+            <a href="https://google.com"
+               title="Поисковая система Google">
+                Google
+            </a>
+        </li>
 
-            <br><br>
+        <li>
+            <a href="https://yandex.ru"
+               title="Поисковая система Яндекс">
+                Яндекс
+            </a>
+        </li>
 
+    </ol>
 
-            <!-- ПОЛ -->
-            Пол:<br>
 
-            <label>
-                <input type="radio"
-                       name="gender"
-                       value="male"
-                       required>
+    <!-- FTP -->
 
-                Мужской
-            </label>
+    <h2>FTP</h2>
 
-            <label>
-                <input type="radio"
-                       name="gender"
-                       value="female">
+    <a href="ftp://user:password@example.com/file.txt">
+        Ссылка на FTP
+    </a>
 
-                Женский
-            </label>
 
-            <br><br>
+    <!-- ФОРМА -->
 
+    <h2 id="form">Форма</h2>
 
-            <!-- ЛЮБИМЫЙ ЯЗЫК -->
-            <label>
-                Любимый язык программирования:
-                <br>
+    <form action="/" method="POST">
 
-                <select name="languages[]"
-                        multiple
-                        required>
+        <!-- ФИО -->
+        <label>
+            ФИО:<br>
 
-                    <option value="Pascal">Pascal</option>
-                    <option value="C">C</option>
-                    <option value="C++">C++</option>
-                    <option value="JavaScript">JavaScript</option>
-                    <option value="PHP">PHP</option>
-                    <option value="Python">Python</option>
-                    <option value="Java">Java</option>
-                    <option value="Haskell">Haskell</option>
-                    <option value="Clojure">Clojure</option>
-                    <option value="Prolog">Prolog</option>
-                    <option value="Scala">Scala</option>
+            <input
+                name="fio"
+                type="text"
+                pattern="[А-Яа-яЁёA-Za-z\s]+"
+                title="Введите только буквы и пробелы"
+                required>
+        </label>
 
-                </select>
-            </label>
+        <br><br>
 
-            <br><br>
 
+        <!-- ТЕЛЕФОН -->
+        <label>
+            Телефон:<br>
 
-            <!-- БИОГРАФИЯ -->
-            <label>
-                Биография:<br>
+            <input
+                name="phone"
+                type="tel"
+                pattern="[0-9]{11}"
+                minlength="11"
+                maxlength="11"
+                inputmode="numeric"
+                title="Введите номер телефона из 11 цифр"
+                required>
+        </label>
 
-                <textarea name="bio"
-                          rows="5"
-                          cols="40"
-                          required></textarea>
-            </label>
+        <br><br>
 
-            <br><br>
 
+        <!-- EMAIL -->
+        <label>
+            E-mail:<br>
 
-            <!-- СОГЛАСИЕ -->
-            <label>
+            <input
+                name="email"
+                type="email"
+                placeholder="Введите вашу почту"
+                required>
+        </label>
 
-                <input type="checkbox"
-                       name="contract"
-                       required>
+        <br><br>
 
-                С контрактом ознакомлен(а)
 
-            </label>
+        <!-- ДАТА РОЖДЕНИЯ -->
+        <label>
+            Дата рождения:<br>
 
-            <br><br>
+            <input
+                name="birthdate"
+                type="date"
+                min="1900-01-01"
+                max="2026-09-25"
+                required>
+        </label>
 
+        <br><br>
 
-            <!-- КНОПКА -->
-            <input type="submit"
-                   value="Сохранить">
 
-        </form>
+        <!-- ПОЛ -->
+        Пол:<br>
 
-    </main>
+        <label>
+            <input
+                type="radio"
+                name="gender"
+                value="male"
+                required>
 
+            Мужской
+        </label>
 
-    <!-- ПОДВАЛ -->
+        <label>
+            <input
+                type="radio"
+                name="gender"
+                value="female">
 
-    <footer id="footer">
+            Женский
+        </label>
 
-        <div class="footer-content">
-            © Сергей Синица
-        </div>
+        <br><br>
 
-    </footer>
+
+        <!-- ЛЮБИМЫЙ ЯЗЫК -->
+        <label>
+            Любимый язык программирования:
+            <br>
+
+            <select
+                name="languages[]"
+                multiple
+                required>
+
+                <option value="Pascal">Pascal</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="PHP">PHP</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="Haskell">Haskell</option>
+                <option value="Clojure">Clojure</option>
+                <option value="Prolog">Prolog</option>
+                <option value="Scala">Scala</option>
+
+            </select>
+        </label>
+
+        <br><br>
+
+
+        <!-- БИОГРАФИЯ -->
+        <label>
+            Биография:<br>
+
+            <textarea
+                name="bio"
+                rows="5"
+                cols="40"
+                required></textarea>
+        </label>
+
+        <br><br>
+
+
+        <!-- СОГЛАСИЕ -->
+        <label>
+
+            <input
+                type="checkbox"
+                name="contract"
+                required>
+
+            С контрактом ознакомлен(а)
+
+        </label>
+
+        <br><br>
+
+
+        <!-- КНОПКА -->
+        <input
+            type="submit"
+            value="Сохранить">
+
+    </form>
+
+</main>
 
 </body>
 </html>
-```
